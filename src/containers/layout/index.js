@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import Phones from './../phones';
+import Phones from "./../phones";
 
 const routes = (
   <Switch>
@@ -8,6 +8,15 @@ const routes = (
   </Switch>
 );
 
-const Layout = () => <div>{routes}</div>;
+const Layout = () => (
+  <div className="view-conteiner">
+    <div className="conteiner">
+      <div className="row">
+        <div className="col-md-3">Sidebar</div>
+        <div className="col-md-9">{routes}</div>
+      </div>
+    </div>
+  </div>
+);
 
 export default Layout;
