@@ -5,6 +5,7 @@ import phones from "reducers/phones";
 import phonesPage from "reducers/phonesPage";
 import phonePage from "reducers/phonePage";
 import basket from "reducers/basket";
+import categories from "reducers/categories";
 
 const createRootReducer = (history) =>
   combineReducers({
@@ -12,6 +13,7 @@ const createRootReducer = (history) =>
     phonesPage,
     phonePage,
     basket,
+    categories,
     router: connectRouter(history),
   });
 
